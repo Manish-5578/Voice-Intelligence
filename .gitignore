@@ -1,0 +1,17 @@
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore API keys and secrets
+.env
+
+# Ignore temporary audio files and folders
+recordings/
+__pycache__/
+*.mp3
+*.wav
+*.dat
+
+# Ignore IDE settings
+.vscode/
+.idea/
