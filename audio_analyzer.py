@@ -37,10 +37,10 @@ class CallReport(BaseModel):
 
 # --- 2. Configuration ---
 
-GEMINI_API_KEY = "AIzaSyCJ4UuZbeUyaGjMIzmCRnuC_8AwFp2YIQ8"
+GEMINI_API_KEY = "YOUR_API_KEY_HERE"
 MODEL = "gemini-2.5-flash"
 SUPPORTED_EXTENSIONS = [('Audio Files', '*.mp3 *.wav *.flac *.m4a *.dat'), ('All Files', '*.*')]
-DEFAULT_INPUT_PATH = r"D:\Projects\CI\recordings"
+DEFAULT_INPUT_PATH = r"your path"
 
 
 def convert_dat_to_mp3(dat_path: str) -> Optional[str]:
@@ -253,4 +253,5 @@ class VoiceIntelligenceApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = VoiceIntelligenceApp(root)
+
     root.mainloop()
